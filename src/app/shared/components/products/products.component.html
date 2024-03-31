@@ -1,6 +1,23 @@
 
 
-<p>
+<p
+[ngStyle]="{
+    backgroundColor : getBgColor()
+}"
+[ngClass]="{
+    'text-white':isproductavaible,
+    'text-danger':!isproductavaible,
+    'p-4':isproductavaible,
+    'p-3':!isproductavaible
+}"
+
+>
 
     The Product is {{ProductName}} with id {{ProductId}}
+     and <strong *ngIf="isproductavaible;else outOfStock">Product is avaibale</strong>
+
+     <ng-template #outOfStock>
+        <strong>Product is out of stock</strong>
+     </ng-template>
+     
 </p>

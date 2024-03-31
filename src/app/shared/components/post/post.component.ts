@@ -10,6 +10,7 @@ import { Component, ElementRef, OnInit, ViewChild } from "@angular/core";
 })
 
 export class PostComponent implements OnInit{
+
  isDisabled:boolean=true;
  productCount:number=0;
  productAddStatus: string =`No Product is added Yet !!`

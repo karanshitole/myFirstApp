@@ -6,13 +6,15 @@ import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './shared/components/products/products.component';
 import { PostComponent } from './shared/components/post/post.component';
 import { FormsModule } from '@angular/forms';
+import { PostsComponent } from './shared/components/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     ProductsComponent,
-    PostComponent
+    PostComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
