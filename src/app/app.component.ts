@@ -14,30 +14,30 @@ export class AppComponent {
     {
       fname:"karan",
       lname:"shitole",
-      email:"karanshitole@123",
+      email:"karanshitole@123gmail.com",
       contact:9049826265
     },
     {
       fname:"sakshi",
       lname:"shitole",
-      email:"sakshishitole@123",
+      email:"sakshishitole@123gmail.com",
       contact:9049826265
     },
     {
       fname:"Aaru",
       lname:"shitole",
-      email:"aarushitole@123",
+      email:"aarushitole@123gmail.com",
       contact:9049826265
     }
   ]
 
-  PlayerName :Array<string>=["Rhoit","Sachin","Rahul","Virat"];
+  PlayerName :Array<string>=["Rohit","Sachin","Rahul","Virat"];
 
   players :Array<Istudent>= [
     {
       fname:"Rohit",
       lname:"Sharma",
-      email:"rhohit@123",
+      email:"rohhit@123",
      contact:12345
     },
     {

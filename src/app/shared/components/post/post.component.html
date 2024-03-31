@@ -1,2 +1,50 @@
+
+<div class="form-group">
+    <label for="serach">Serach Products</label>
+     <input type="text"
+    (keyup)="onProductSearch($event)"
+    class="form-control" id="Serach">
+</div>
+<!-- two way binding -->
+<div class="form-group">
+    <label for="serach">Serach Products2</label>
+     <input type="text" [(ngModel)]="searchProd" class="form-control">
+</div>
+
+<!-- boolean -->
+<p class="alert alert-success" *ngIf="searchProd.length>0"; else noProdSearch>
+    {{searchProd}}
+</p>
+<ng-template #noProdSearch>
+    <p class="alert alert-warning">No Product Search Yet !!!</p>
+</ng-template>
+
+<div class="form-group">
+    <label for="serach">Get Products</label>
+     <input type="text" #GetProduct
+    
+    class="form-control">
+</div>
+<button class="btn btn-warning"
+(click)="onGetProduct(GetProduct)">
+Get Product</button>
+<hr>
+<button class="btn btn-dark"
+(click)="onGetproduct1()">
+Get Product1</button>
+
+<hr>
+<button
+[disabled]="isDisabled"(click)="getProductStatus()"class="btn btn-success mr-3"> Add Product</button>
+<button class="btn btn-primary " [disabled]="productCount===0"(click)="removeProduct()">Remove Product</button>
+<hr>
+
+<p class="alert alert-info">
+    {{productAddStatus}}
+</p>
+<hr>
+
+
 <app-products></app-products>
-<app-products></app-products>
+
+
