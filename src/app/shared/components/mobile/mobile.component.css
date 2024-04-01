@@ -1,0 +1,24 @@
+
+
+.imgContainer{
+    height: 300px;
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.noImg{
+    height: 100%;
+    border: 1 px solid #ededed;   
+    background-color: #ccc;
+}
+
+    .rating{
+        border-radius: 4px;
+    }
+.notAval{
+    filter: blur(.5px) grayscale(1);
+}
+li{
+    list-style: none;
+}

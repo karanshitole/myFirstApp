@@ -7,6 +7,7 @@ import { ProductsComponent } from './shared/components/products/products.compone
 import { PostComponent } from './shared/components/post/post.component';
 import { FormsModule } from '@angular/forms';
 import { PostsComponent } from './shared/components/posts/posts.component';
+import { MobileComponent } from './shared/components/mobile/mobile.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PostsComponent } from './shared/components/posts/posts.component';
     ProductComponent,
     ProductsComponent,
     PostComponent,
-    PostsComponent
+    PostsComponent,
+    MobileComponent
   ],
   imports: [
     BrowserModule,
