@@ -1,0 +1,74 @@
+
+
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a href="javascript:;"
+        data-framework ='angular'
+        (click)="selectedFramwork ='angular'"
+        [ngClass]="{
+            active:selectedFramwork === 'angular'
+        }"
+        class="nav-link">Angular</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;"
+        data-framework ='react'
+        (click)="selectedFramwork ='react'"
+        [ngClass]="{
+            active : selectedFramwork === 'react'
+        }"
+        class="nav-link">React JS</a>
+    </li>
+    <li class="nav-item">
+        <a href="javascript:;" 
+        data-framework ='bootstrap'
+        (click)="selectedFramwork ='bootstrap'"
+        [ngClass]="{
+            active : selectedFramwork === 'bootstrap'
+        }"
+        class="nav-link">Bootstrap</a>
+    </li>
+</ul>
+
+
+<div class="tab-content mt-4">
+    <div class="card" *ngIf="selectedFramwork ==='angular'">
+        <div class="card-body">
+            <strong>
+                Angular  is a platform and framework for building single-page client applications using HTML and TypeScript. Angular is written in TypeScript. It implements core and optional functionality as a set of TypeScript libraries that you import into your applications.
+The architecture of an Angular application relies on certain fundamental concepts. The basic building blocks of the Angular framework are Angular components.
+Components define views, which are sets of screen elements that Angular can choose among and modify according to your program logic and data
+Components use services, which provide background functionality not directly related to views such as fetching data. Such services can be injected into components as dependencies, making your code modular, reusable, and efficient.
+Components and services are classes marked with decorators. These decorators provide metadata that tells Angular how to use them.
+            </strong>
+        </div>
+    </div>
+    <div class="card"  *ngIf="selectedFramwork ==='react'">
+        <div class="card-body">
+            <strong>
+ReactJS  
+The world can't live without mobile and web applications in this day and age. Everything is digitized, from booking cabs to ordering food to make bank transactions. Thanks to the efficient frameworks that provide a seamless user experience. One such robust frontend library is React. This tutorial on ‘what is React’ will help you understand the library's fundamentals and work with a simple demo.
+React-Frontend_Language
+React is a framework that employs Webpack to automatically compile React, JSX, and ES6 code while handling CSS file prefixes. React is a JavaScript-based UI development library. Although React is a library rather than a language, it is widely used in web development. The library first appeared in May 2013 and is now one of the most commonly used frontend libraries for web development.
+React offers various extensions for entire application architectural support, such as Flux and React Native, beyond mere UI.
+ReactJS History
+            </strong>
+        </div>
+    </div>
+    <div class="card"  *ngIf="selectedFramwork ==='bootstrap'">
+        <div class="card-body">
+            <strong>
+                Bootstrap 
+                is an HTML, CSS and JS library
+                 that focuses on simplifying the development of informative 
+                 web pages (as opposed to web applications). The primary purpose of adding it to a web project is 
+                 to apply Bootstrap's choices of color, size, font and layout to that project.
+                  As such, the primary factor is whether the developers in charge find those choices to their liking.
+                   Once added to a project, Bootstrap provides basic style definitions for all HTML elements.
+                    The result is a uniform appearance for prose, tables and form elements across web browsers.
+                     In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents.
+                      For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight
+            </strong>
+        </div>
+    </div>
+</div>
