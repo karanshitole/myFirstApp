@@ -21,4 +21,8 @@
 }
 li{
     list-style: none;
+    list-style-type: square;
+    padding: 5px;
+    background-color: #ededed;
+    color: dark;
 }
