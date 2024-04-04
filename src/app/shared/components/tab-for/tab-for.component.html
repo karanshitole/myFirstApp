@@ -1,0 +1,24 @@
+<!-- <p>tab-for works!</p> -->
+<ul class="nav nav-pills">
+    <li class="nav-item" *ngFor="let tab of tabArr">
+        <a href="Javascript:;"
+        [ngClass]="{
+            active :tab.tabTitle.toLocaleLowerCase().includes(selectedFramework)
+        }"
+        class="nav-link text-uppercase"
+        (click)="selectedFramework=tab.tabTitle"
+        >
+        
+            {{tab.tabTitle}}
+        </a>
+    </li>
+</ul>
+
+<div class="tab-content mt-4">
+    <ng-container  *ngFor="let tab of tabArr" >
+    <div  *ngIf="tab.tabTitle.toLocaleLowerCase().includes(selectedFramework)"  class="card">
+        <div class="card-body" [innerHTML]="tab.tabContent">
+        </div>
+    </div>
+</ng-container>
+</div>

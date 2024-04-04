@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { PostsComponent } from './shared/components/posts/posts.component';
 import { MobileComponent } from './shared/components/mobile/mobile.component';
 import { TabComponent } from './shared/components/tab/tab.component';
+import { TabForComponent } from './shared/components/tab-for/tab-for.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TabComponent } from './shared/components/tab/tab.component';
     PostComponent,
     PostsComponent,
     MobileComponent,
-    TabComponent
+    TabComponent,
+    TabForComponent
   ],
   imports: [
     BrowserModule,
