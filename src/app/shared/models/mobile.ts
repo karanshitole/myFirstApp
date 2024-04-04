@@ -6,4 +6,5 @@ export interface ImobileProduct{
     image: string;
     isAvailable: boolean;
     rating:number;
+    
 }

@@ -10,6 +10,7 @@ import { PostsComponent } from './shared/components/posts/posts.component';
 import { MobileComponent } from './shared/components/mobile/mobile.component';
 import { TabComponent } from './shared/components/tab/tab.component';
 import { TabForComponent } from './shared/components/tab-for/tab-for.component';
+import { TabSwitchComponent } from './shared/components/tab-switch/tab-switch.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TabForComponent } from './shared/components/tab-for/tab-for.component';
     PostsComponent,
     MobileComponent,
     TabComponent,
-    TabForComponent
+    TabForComponent,
+    TabSwitchComponent
   ],
   imports: [
     BrowserModule,
