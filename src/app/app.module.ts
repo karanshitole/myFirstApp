@@ -12,6 +12,7 @@ import { TabComponent } from './shared/components/tab/tab.component';
 import { TabForComponent } from './shared/components/tab-for/tab-for.component';
 import { TabSwitchComponent } from './shared/components/tab-switch/tab-switch.component';
 import { MoviesComponent } from './shared/components/movies/movies.component';
+import { TodosComponent } from './shared/components/todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MoviesComponent } from './shared/components/movies/movies.component';
     TabComponent,
     TabForComponent,
     TabSwitchComponent,
-    MoviesComponent
+    MoviesComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
