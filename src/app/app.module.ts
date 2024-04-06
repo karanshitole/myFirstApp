@@ -14,6 +14,7 @@ import { TabSwitchComponent } from './shared/components/tab-switch/tab-switch.co
 import { MoviesComponent } from './shared/components/movies/movies.component';
 import { TodosComponent } from './shared/components/todos/todos.component';
 import { StdComponent } from './shared/components/std/std.component';
+import { ProductBrandComponent } from './product-brand/product-brand.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { StdComponent } from './shared/components/std/std.component';
     MoviesComponent,
     TodosComponent,
     StdComponent,
+    ProductBrandComponent,
  
   ],
   imports: [

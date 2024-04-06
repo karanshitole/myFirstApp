@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 mt-4">
+            <div class="form-group">
+                <label for="productName">Product Name</label>
+                <input type="text" #productName class="form-control" id="productName">
+            </div>
+            <div class="form-group">
+                <label for="PInformation">Product Information</label>
+               <textarea class="form-control" #productInfo id="Information"rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="ProImage">ProImage Url</label>
+                <input type="url" id="ProductUrl" #producturl class="form-control" placeholder="Enter product image URL">
+            </div>
+            <button class="btn btn-outline-success btn-block"
+            (click)="productAdd(productName,productInfo,producturl)"
+            >Add Product</button>
+        </div>
+        <hr>
+        <div class="col-md-6 offset-md-3 mt-4"
+        *ngFor="let prod of productArr">
+            <div class="card"
+            
+            *ngIf="productArr.length>0;else noproduct">
+                <div class="card-header">
+                    <h4 class="mb-0">{{prod.productName}}</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>{{prod.productInfo}}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img [src]='prod.productUrl' 
+                                class="img-fluid" [alt]="prod.productName">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-primary">Edit</button>
+                    <button class="btn btn-danger">Delete</button>
+                </div>
+            </div>
+            <ng-template #noproduct>
+                <p class="alert alert-warning">
+                    No Student Data is available yet !!!
+                </p>
+            </ng-template>
+        </div>
+    </div>
+</div>
